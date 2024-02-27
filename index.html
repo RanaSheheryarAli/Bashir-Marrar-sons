@@ -1,0 +1,143 @@
+<!-- <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
+    $phone_number = $_POST['phone'];
+    $address = $_POST['address'];
+    $message = $_POST['list'];
+  
+   $email_from =visitor_email ;
+  $email_subject = "New Form submission";
+  $email_body = "You have received a new message from the user $name.\n" .
+                "Phone Number: $phone_number\n" .
+                "Address: $address\n" .
+                "Email: $visitor_email\n" .
+                "Message:\n$message";
+  
+    $to = "sheheryar.ali876@gmail.com";
+  
+    $headers = "From: $email_from\r\n";
+    $headers .= "Reply-To:$visitor_email \r\n";
+
+if (mail($to, $email_subject, $email_body, $headers)) {
+    echo " <div style> <p style='color: green;'>Message sent successfully!</p>  </div>";
+} else {
+    echo "<p style='color: red;'>Message delivery failed!</p>";
+}
+  }
+  ?> -->
+    
+     
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <div id="logo">
+            <img src="logo1.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="product.html">Products</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary"> Wellcome to Bashir Marrar & sons <br>online grocerry store</h1>
+        <p> We will give you the best home Services at your Order <br> let's order something</p>
+        <button class="btn"><a href="#contact">Order Now</a></button>
+    </section>
+
+    <section id="services-container">
+
+        <div id="services">
+    
+    
+            <div class="box">
+                <img src="img/hair.jpg" alt="pic" width="120px" height="100%">
+                <h2 class="h-secondary center">Hair and face Product</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi in amet voluptatibus. Natus, ratione? Hic tempora recusandae excepturi repellat. Et voluptas eveniet reiciendis adipisci quisquam voluptatum fugiat iusto suscipit.</p>
+    
+            </div>
+            <div class="box">
+                <img src="img/all2.jpg" alt="pic" width="120px" height="100%">
+                <h2 class="h-secondary center">Detergents Products</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi in amet voluptatibus. Natus, ratione? Hic tempora recusandae excepturi repellat. Et voluptas eveniet reiciendis adipisci quisquam voluptatum fugiat iusto suscipit.</p>
+    
+            </div>
+            <div class="box">
+                <img src="img/dall.png" alt="pic" width="120px" height="100%">
+                <h2 class="h-secondary center">pulses or Lenticeles</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi in amet voluptatibus. Natus, ratione? Hic tempora recusandae excepturi repellat. Et voluptas eveniet reiciendis adipisci quisquam voluptatum fugiat iusto suscipit.</p>
+            </div>
+            <div class="box">
+                <img src="img/grocery.png" alt="pic" width="180px" height="90%">
+                <h2 class="h-secondary center">All other things</h2>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi in amet voluptatibus. Natus, ratione? Hic tempora recusandae excepturi repellat. Et voluptas eveniet reiciendis adipisci quisquam voluptatum fugiat iusto suscipit.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="prodheahing">
+        <h1>Contact Us</h1>
+    </div>
+
+    <section id="contact">
+
+
+        <div id="contact-box">
+            <form  reset(); method="post" name="myemailform" action="">
+                <div class="form-group">
+
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="text" name="address" id="Adress" placeholder="Enter your Adress" required>
+                </div>
+                <div class="form-group">
+
+                    <textarea name="list" id="list" cols="30" rows="5" required
+                        placeholder="Enter your List"></textarea>
+                </div>
+                <br>
+                <div> <Button name="send" class="cont">Send Now</Button></div>
+                <br>
+                <input style="  background-color:  rgb(237, 153, 27);" type="reset">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+ 
+
+</body>
+
+</html>
